@@ -28,8 +28,8 @@ services:
   # Microservicio de competencias
   ms-competencies:
     extends:
-      file: ./backend/ms-competencies/docker-compose.yml
-      service: competencies
+      file: ./backend/ms-competencies/docker-compose.override.yml
+      service: ms-competencies
 
   # RabbitMQ para mensajería
   rabbitmq:
